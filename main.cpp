@@ -9,7 +9,7 @@
 #include <mutex>
 #include <set>
 #include <boost/algorithm/string.hpp>
-//#include <boost/algorithm/string/regex.hpp>
+
 
 using namespace std;
 
@@ -19,7 +19,7 @@ static std::unordered_multimap<string,string> map_of_class;
 std::set<std::string> set_of_stop_words;
 std::set<std::string> query_string;
 std::vector<std::string> string_keywords;
-std::vector<std::string> suffixes{"ily", "ted","ed","y", "ing", "ty"};
+//std::vector<std::string> suffixes{"ily", "ted","ed","y", "ing", "ty"};
 std::mutex mtx;
 std::vector<std::string> labels{"weather","calendar","city","fact"};
 std::string intention;
